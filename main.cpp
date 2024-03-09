@@ -79,53 +79,53 @@ public:
     {
 
         char another;
-        int a;
+        string a;
         int n;
-        cout << "Cfare pije deshironi" << endl;
+        cout << "What kind of cold drinks do you want" << endl;
         cout << "1.Coca Cola $4.5" << endl;
         cout << "2.Fanta $4.5" << endl;
         cout << "3.Sprite $4.5" << endl;
         cout << "4.Apple juice $5.2" << endl;
         cout << "5.Orange juice $5.4" << endl;
         cin >> a;
-        if (a == 1)
+        if (a == "1" || a == "cocacola")
         {
-            cout << "Ti zgjdodhe Coca cola, sa te tilla deshironi" << endl;
+            cout << "You choose Coca-Cola how many do you want" << endl;
             cin >> n;
             price = price + 4.5*n;
         }
         else
-        if (a == 2)
+        if (a == "2" || a == "fanta")
         {
 
-            cout << "Ti zgjdodhe Fanta, sa te tilla deshironi" << endl;
+            cout << "You choose Fanta how many do you want" << endl;
             cin >> n;
             price = price + 4.5*n;
         }
         else
-        if (a == 3)
+        if (a == "3" || a == "sprite")
         {
-            cout << "Ti zgjdodhe Sprite, sa te tilla deshironi" << endl;
+            cout << "You choose Sprite how many do you want" << endl;
             cin >> n;
             price = price + 4.5*n;
         }
         else
-        if (a == 4)
+        if (a == "4" || "applejuice")
         {
-            cout << "Ti zgjdodhe apple juice, sa te tilla deshironi" << endl;
+            cout << "You choose Apple juice how many do you want" << endl;
             cin >> n;
             price = price + 5.2 * n;
         }
         else
-        if (a == 5)
+        if (a == "5" || "orangejuice")
         {
-            cout << "Ti zgjdodhe orange juice, sa te tilla deshironi" << endl;
+            cout << "You choose Orange juice how many do you want" << endl;
             cin >> n;
             price = price + 5.4 * n;
         }
         else
-            cout << "Ti nuk zgjodhe produkt nga kjo kategori" << endl;
-        cout << "Deshironi dicka tjeter nga kjo kategori? Y/N" << endl;
+            cout << "Do you want something else from this category Y/N" << endl;
+        cout << "Do you want something else from this category Y/N" << endl;
         cin >> another;
         if (another == 'Y' || another == 'y')
         {
@@ -137,33 +137,33 @@ public:
     {
         int n;
         char another;
-        int a;
-        cout << "Cfare torte deshironi" << endl;
+        string a;
+        cout << "What kind of cake do you want" << endl;
         cout << "1.Cheese Cake $8.5$" << endl;
         cout << "2.Chocolate Cake $8.3$" << endl;
         cout << "3.Panacota $9" << endl;
         cin >> a;
-        if (a == 1)
+        if (a == "1" || a == "cheesecake")
         {
-            cout << "Ti zgjdodhe Cheese Cake, sa te tilla deshironi" << endl;
+            cout << "You choose Cheese Cake how many do you want" << endl;
             cin >> n;
             price = price + 8.5 * n;
         }
         else
-        if (a == 2)
+        if (a == "2" || a == "chocolatecake")
         {
-            cout << "Ti zgjdodhe Chocolate Cake, sa te tilla deshironi" << endl;
+            cout <<  "You choose Chocolate Cake how many do you want" << endl;
             cin >> n;
             price = price + 8.3 * n;
         }
         else
-        if (a == 3)
+        if (a == "3" || a == "panacota")
         {
-            cout << "Ti zgjdodhe Panacota, sa te tilla deshironi" << endl;
+            cout << "You choose Panacota how many do you want" << endl;
             cin >> n;
             price = price + 9 * n;
         }
-        cout << "Deshironi dicka tjeter nga kjo kategori? Y/N" << endl;
+        cout << "Do you want something else from this category Y/N" << endl;
 
         cin >> another;
         if (another == 'Y' || another == 'y')
@@ -175,33 +175,33 @@ public:
     {
         int n;
         char another;
-        int a;
-        cout << "Cfare Koktell deshironi" << endl;
+        string a;
+        cout << "What kind of cocktail do you want" << endl;
         cout << "1.Mojito mocktail  $12.7" << endl;
         cout << "2.Summer cup mocktail $14.5" << endl;
         cout << "3.New York sour mocktail $13.8" << endl;
         cin >> a;
-        if (a == 1)
+        if (a == "1" || a == "mojito")
         {
-            cout << "Ti zgjdodhe Mojito mocktail, sa te tilla deshironi" << endl;
+            cout << "You choose Mojito mocktail, how many of them do you want" << endl;
             cin >> n;
             price = price + 12.7 * n;
         }
         else
-        if (a == 2)
+        if (a == "2" || a == "summercup")
         {
-            cout << "Ti zgjdodhe Summer cup mocktail, sa te tilla deshironi" << endl;
+            cout << "You choose Summer cup mocktail, how many of them do you want" << endl;
             cin >> n;
             price = price + 14.5 * n;
         }
         else
-        if (a == 3)
+        if (a == "3" || a == "newyork")
         {
-            cout << "Ti zgjdodhe New York sour mocktail, sa te tilla deshironi" << endl;
+            cout << "You New York sour mocktail, how many of them do you want" << endl;
             cin >> n;
             price = price + 13.8 * n;
         }
-        cout << "Deshironi dicka tjeter nga kjo kategori? Y/N" << endl;
+        cout << "Do you want something else from this category Y/N" << endl;
 
         cin >> another;
         if (another == 'Y' || another == 'y')
@@ -215,11 +215,11 @@ public:
         price = 0;
         int a;
         char c;
-        cout << "Cfare deshironi te porosisni" << endl;
-        cout << "1.Pije te ftohta" << endl;
-        cout << "2.Pije te nxehta" << endl;
+        cout << "What do you want to order" << endl;
+        cout << "1.Cold drinks" << endl;
+        cout << "2.Hot Drinks" << endl;
         cout << "3.Desert" << endl;
-        cout << "4.Koktel" << endl;
+        cout << "4.Cocktail" << endl;
         cin >> a;
         if (a == 1)
         {
@@ -241,15 +241,15 @@ public:
             setcoctails();
         }
         cout << "-------------------------------\n\n";
-        cout << "Deshironi dicka nga nje kategori tjeter? Y/N" << endl;
+        cout << "Do you want something else from another category Y/N" << endl;
         cin >> c;
         while (c == 'Y' || c == 'y')
         {
-            cout << "Produkt te ciles kategori?" << endl;
-            cout << "1.Pije te ftohta" << endl;
-            cout << "2.Pije te nxehta" << endl;
+            cout << "From what category?" << endl;
+            cout << "1.Cold Drinks" << endl;
+            cout << "2.Hot Drinks" << endl;
             cout << "3.Desert" << endl;
-            cout << "4.Koktel" << endl;
+            cout << "4.Cocktail" << endl;
             cin >> a;
             if (a == 1)
             {
@@ -270,7 +270,7 @@ public:
             {
                 setcoctails();
             }
-            cout << "Deshironi dicka nga nje kategori tjeter? Y/N" << endl;
+            cout << "Do you want something else from another category Y/N" << endl;
             cin >> c;
             cout << "-------------------------------\n\n";
         }
@@ -324,9 +324,7 @@ public:
     void setChose()
     {
         int c;
-        cout << "\t\t\t\t\tFUSION" << endl;
-        cout << "Zgjidhni se cfare jeni/ cfare deshironi te beni" << endl;
-        cout << "1.Kamarier" << endl;
+        cout << "1.Waiter" << endl;
         cout << "2.Admin" << endl;
         cout << "3.Exit" << endl;
         cin >> c;
@@ -356,8 +354,8 @@ public:
         cin >> p;
         if (p == "Admin")
         {
-            cout << "Profiti per sot eshte: $" << getTotal() << endl;
-            cout << "Jane sherbyer " << getnrTables() << " tavolina " << endl;
+            cout << "Profit for today is: $" << getTotal() << endl;
+            cout << getnrTables() << " tables were served" << endl;
         }
         else
         {
@@ -374,7 +372,7 @@ public:
         nrTables=1;
         print();
         cout << "-------------------------------\n\n";
-        cout << "Deshironi te sherbeni nje tavoline tjeter" << endl;
+        cout << "Do you want to serve another table" << endl;
         cin >> c;
 
         while (c == 'Y' || c == 'y')
@@ -383,7 +381,7 @@ public:
             input();
             setTotal();
             print();
-            cout << "Deshironi te sherbeni nje tavoline tjeter" << endl;
+            cout << "Do you want to serve another table" << endl;
             cin >> c;
             cout << "-------------------------------\n\n";
         }
@@ -392,9 +390,8 @@ public:
 };
 void menu::print()
 {
-    cout << "FUSION" << endl;
-    cout << "Faktura: $" << price << endl;
-    cout << "Jeni te mireseardhur \n" << endl;
+    cout << "Bill: $" << price << endl;
+    cout << "You are welcome \n" << endl;
     cout << "---------------------------\n" << endl;
 }
 int main()
