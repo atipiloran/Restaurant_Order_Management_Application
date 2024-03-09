@@ -37,38 +37,38 @@ public:
     void setHotDrinks()
     {
         int n;
-        int a;
+        string a;
         char another;
-        cout << "Cfare pije te ngrohte deshironi" << endl;
+        cout << "What kind of hot drink do you want" << endl;
         cout << "1.Tea $4.5" << endl;
         cout << "2.Coffe $3" << endl;
         cout << "3.Hot chocolate $5.6" << endl;
         cin >> a;
-        if (a == 1)
+        if (a == "1" || a == "tea")
         {
-            cout << "Ti zgjdodhe caj, sa te tille deshironi" << endl;
+            cout << "You choose tea, how many do you want?" << endl;
             cin >> n;
             price = price + 4.5*n;
         }
         else
-        if (a == 2)
+        if (a == "2" || a == "coffe")
         {
-            cout << "Ti zgjdodhe kafe, sa te tilla deshironi" << endl;
+            cout << "You choose coffe, how many do you want?" << endl;
             cin >> n;
             price = price + 3*n;
 
         }
         else
-        if (a == 3)
+        if (a == "3" || a == "hot chocolate")
         {
-            cout << "Ti zgjdodhe hot chocolate, sa te tilla deshironi" << endl;
+            cout << "You choose hot chocolate, how many do you want?" << endl;
             cin >> n;
 
             price = price + 5.6*n;
         }
         else
-            cout << "Ti nuk ke zgjedhur produkt te kesaj kategorie" << endl;
-        cout << "Deshironi dicka tjeter nga kjo kategori? Y/N" << endl;
+            cout << "You didnt choose any product in this category" << endl;
+        cout << "Do you want something else from this category Y/N" << endl;
         cin >> another;
         if (another == 'Y')
         {
