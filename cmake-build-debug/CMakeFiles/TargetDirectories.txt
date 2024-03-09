@@ -1,0 +1,3 @@
+/Users/loranatipi/CLionProjects/Restaurant-Order-Management-Application/cmake-build-debug/CMakeFiles/Restaurant_Order_Management_Application.dir
+/Users/loranatipi/CLionProjects/Restaurant-Order-Management-Application/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/loranatipi/CLionProjects/Restaurant-Order-Management-Application/cmake-build-debug/CMakeFiles/rebuild_cache.dir
